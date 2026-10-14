@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-canvas: #F3F0E8;
+    --border-subtle: #E2DDD2;
+    --text-primary: #292925;
+    --text-muted: #525048;
+    --accent-copper: #9C6246;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Accessibility focus ring */
+  *:focus-visible {
+    outline: 2px solid #9C6246;
+    outline-offset: 2px;
+  }
+}
